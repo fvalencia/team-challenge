@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "module": "commonjs",
+    "types": ["node"],
+    "esModuleInterop": true,
+    "typeRoots": ["src/@types"],
+  },
+  "files": ["src/@types/graphql.d.ts"],
+  "exclude": ["**/*.spec.ts"],
+  "include": ["**/*.ts", "**/*.graphql"]
+}
